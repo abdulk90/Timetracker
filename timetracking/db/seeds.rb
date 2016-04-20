@@ -1,13 +1,10 @@
-Project.create(name:"Abdul", description:"Awesome person")
-Project.create(name:"Hazel", description:"Awesome dog")
-Project.create(name:"Lina", description:"Awesome Roomie")
-Project.create(name:"Angel", description:"Ehhh Roomie")
-Project.create(name:"Ness", description:"Earthbound")
-Project.create(name:"Lucas", description:"Mother 3")
-Project.create(name:"Pizza", description:"Favorite food")
-Project.create(name:"Hazelnut", description:"Favorite flavor coffee")
-Project.create(name:"Salads", description:"Yummy")
-Project.create(name:"Pencil", description:"Writing thing")
+project1=Project.create(name:"Abdul", description:"Awesome person")
+project2=Project.create(name:"Hazel", description:"Awesome dog")
+project3=Project.create(name:"Lina", description:"Awesome Roomie")
+
+project1.time_entries.create(project_id:1, hours:3, minutes:43,comment:"Me", date:Time.new )
+project2.time_entries.create(project_id:2, hours:4, minutes:23,comment:"Dog", date:Time.new )
+project3.time_entries.create(project_id:3, hours:2, minutes:63,comment:"Roomie", date:Time.new )
 
 
 
